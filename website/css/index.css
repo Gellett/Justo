@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "black streamer";
+    src: url("fonts/black_streamer/black_streamer-webfont.eot");
+    src:
+    url("fonts/black_streamer/black_streamer-webfont.woff") format("woff")
+    }
+@font-face {
+    font-family: "cartoonish";
+    src: url("fonts/cartoonish/cartoonish-webfont.eot");
+    src:
+    url("fonts/cartoonish/cartoonish-webfont.woff") format("woff")
+    }
+@font-face {
+    font-family: "danila";
+    src: url("fonts/danila/danila-webfont.eot");
+    src:
+    url("fonts/danila/danila-webfont.woff") format("woff")
+    }
+@font-face {
+    font-family: "fontania";
+    src: url("fonts/fontania/fontania-webfont.eot");
+    src:
+    url("fonts/fontania/fontania-webfont.woff") format("woff")
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Myanmar MN";
+    box-sizing: border-box;
+}
+
+body{
+    scroll-snap-type: y mandatory;
+}
+
+main{
+    position: relative;
+}
+
+.snap{
+    scroll-snap-align: start;
+}
+
+.snap_end{
+    scroll-snap-align: end;
+}
+
+p{
+    font-size: 30px;
+}
+
+#forside_btn{
+    background-color: rgba(0, 84, 124, 0.9);
+}
+
+    nav{
+        position: fixed;
+        right: 3%;
+        bottom: 40%;
+        height: 60px;
+        line-height: 60px;
+        z-index: 1;
+    }
+
+        nav li{
+            position: relative;
+            background-color: rgba(221, 221, 221,0.9);
+            list-style-type: none;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 8px;
+            border: 3px solid black;
+        }
+
+        nav li:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+
+        }
+
+        nav img{
+            width: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+.divider{
+    height: 268px;
+    width: 100%;
+    background-image: url("../images/wall.png");
+
+    background-size: contain;
+}
+
+.parallax{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parallax_1{
+    background-image: url("../images/forside.jpg");
+}
+
+    #logo{
+        position: absolute;
+        left: 10%;
+        top: 16%;
+        font-size: 100px;
+        line-height: 140px;
+        color: floralwhite;
+        width: 400px;
+        letter-spacing: 10px;
+    }
+
+        #logo h1{
+            font-size: 172px;
+            font-family: "fontania";
+            color: #DDDDDD;
+        }
+
+        #logo h4{
+            font-family: "fontania";
+            color: #DDDDDD;
+        }
+
+#parallax_2{
+    background-image: url("../images/guitar.jpg");
+}
+
+#om_mig{
+    position: absolute;
+    top: 7.5%;
+    right: 13%;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+    height: 85%;
+    border-radius: 50px;
+    padding-top: 30px;
+}
+
+#om_mig h1{
+    font-family: "danila";
+    font-size: 100px;
+    color: #DDDDDD;
+}
+
+#om_mig p{
+    font-size: 40px;
+    font-family: "danila";
+    padding-top: 25px;
+    text-align: justify;
+    color: #DDDDDD;
+}
+
+#om_mig video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+#parallax_3{
+    background-image: url("../images/citat_billede.png");
+}
+
+#bobble{
+    position: absolute;
+    width: 680px;
+    height: 600px;
+    left: 33%;
+    top: 32%;
+}
+
+#citat{
+    position: absolute;
+    top: 53%;
+    right: 9%;
+    text-align: center;
+    width: 75%;
+}
+
+#citat p{
+    font-family: "cartoonish";
+    border-radius: 50px;
+    font-style: oblique;
+    text-align: center;
+    font-size: 108px;
+    padding: 30px;
+    padding-right: 35px;
+    width: 80%;
+    margin: auto;
+    color: #DDDDDD;
+    line-height: 1em;
+}
+
+#parallax_4{
+    background-image: url("../images/concrete_wall.jpg");
+}
+
+#parallax_4 h1{
+    font-family: "black streamer";
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    font-size: 60px;
+    color: #fff;
+}
+
+#pil{
+    position: absolute;
+    top: -170px;
+    transform: rotate(140deg);
+    width: 100px;
+    left: 130px;
+}
+
+#headphones{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#lyt_left{
+    padding: 25px;
+    position: absolute;
+    top: 24%;
+    width: 40%;
+    left: 10%;
+    height: 640px;
+
+}
+
+    #lyt_left p{
+        font-family: "black streamer";
+        width: 100%;
+        margin: auto;
+        color: #fff;
+        line-height: 1.77em;
+    }
+
+    .liste{
+        font-family: "black streamer";
+        position: relative;
+        top: 60px;
+    }
+
+    .liste h2{
+        color: #fff;
+    }
+
+    audio{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+#lyt_right{
+    position: absolute;
+    top: 25%;
+    width: 40%;
+    right: 10%;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #f4b653;
+}
+
+a{
+    color: #4a4949;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+footer img{
+    position: absolute;
+    top: 20%;
+    width: 80px;
+}
+
+#flyver{
+    left: 20%;
+}
+
+#lyn{
+    right: 20%;
+}
+
+#footer_container{
+    width: 800px;
+    margin: auto;
+}
+
+.footer_section{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer_section h1{
+    font-weight: normal;
+    font-size: 20px;
+    color: #4a4949;
+    font-family:monospace;
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 0.8s ease-in-out infinite both;
+    animation: pulsate-fwd 0.8s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-2-19 12:35:13
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation pulsate-fwd
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1) rotate(140deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1) rotate(140deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1) rotate(140deg);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1) rotate(140deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1) rotate(140deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1) rotate(140deg);
+  }
+}
+
